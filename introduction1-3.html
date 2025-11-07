@@ -53,6 +53,8 @@
 
       // 毎フレーム時に実行されるループイベントです
       function tick() {
+        // メッシュを回転させる
+        mesh.rotation.y += 0.01;
         // レンダリング
         renderer.render(scene, camera);
 
